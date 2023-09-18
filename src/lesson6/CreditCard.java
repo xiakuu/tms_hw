@@ -20,14 +20,12 @@ public class CreditCard {
     }
 
     public int depositMoney(int deposit){
-        this.money = money;
         int sum = money + deposit;
         money = deposit;
         return sum;
     }
 
     public int withdrawMoney(int withdraw){
-        this.money = money;
         int diff = money - withdraw;
         money = diff;
         return diff;
