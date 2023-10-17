@@ -8,18 +8,14 @@ public class Task1 {
     public static void main(String[] args) {
         HashSet<Integer> hashSet = new HashSet<>();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите 6 чисел");
-        int a;
+        System.out.println("Введите числа: ");
+        String a = sc.next();
 
-        try {
-            for(int i = 0; i < 7; i++) {
-                a = sc.nextInt();
-                hashSet.add(a);
+        for (char q : a.toCharArray()) {
+            if (Character.isDigit(q)) {
+                hashSet.add((int)q - '0');
             }
-        } catch (InputMismatchException e){
-            System.out.println(e);
         }
-        
-            System.out.println(hashSet);
-        }
+        System.out.println(hashSet);
     }
+}
