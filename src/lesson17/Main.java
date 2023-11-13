@@ -16,7 +16,7 @@ public class Main {
         str = sc.nextLine();
 
 
-        Pattern pat = Pattern.compile("\\b[a-zA-Zа-яА-Я]{2,6}\\b");
+        Pattern pat = Pattern.compile("\\b[A-ZА-Я]{2,6}\\b");
         Matcher matcher = pat.matcher(str);
 
 
